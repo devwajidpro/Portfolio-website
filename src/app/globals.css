@@ -24,3 +24,75 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+/* Custom Cursor */
+@media (pointer: fine) {
+  body,
+  a,
+  button,
+  input,
+  textarea {
+    cursor: none !important;
+  }
+}
+
+.custom-cursor-wrapper {
+  pointer-events: none;
+}
+
+/* Center Dot */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #a855f7;
+  box-shadow:
+    0 0 8px #a855f7,
+    0 0 16px rgba(168, 85, 247, 0.8),
+    0 0 25px rgba(139, 92, 246, 0.4);
+  z-index: 99999;
+  pointer-events: none;
+  margin-left: -4px;
+  margin-top: -4px;
+  will-change: transform;
+}
+
+/* Outer Following Ring */
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid rgba(168, 85, 247, 0.4);
+
+  background: radial-gradient(
+    circle,
+    rgba(168, 85, 247, 0.09) 0%,
+    rgba(139, 92, 246, 0.03) 60%,
+    transparent 100%
+  );
+
+  box-shadow:
+    0 0 15px rgba(168, 85, 247, 0.15),
+    inset 0 0 12px rgba(168, 85, 247, 0.08);
+
+  z-index: 99998;
+  pointer-events: none;
+  margin-left: -25px;
+  margin-top: -25px;
+  will-change: transform;
+}
+
+/* Touch devices */
+@media (pointer: coarse) {
+  .custom-cursor-wrapper {
+    display: none;
+  }
+}
