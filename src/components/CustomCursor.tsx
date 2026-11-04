@@ -4,12 +4,14 @@
 import { useEffect, useRef } from 'react';
 
 export default function CustomCursor() {
-  const dotRef = useRef(null);
-  const ringRef = useRef(null);
+  const dotRef = useRef<HTMLDivElement | null>(null);
+  const ringRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const dot = dotRef.current;
     const ring = ringRef.current;
+
+    if (!dot || !ring) return;
 
     let mouseX = 0;
     let mouseY = 0;
@@ -17,9 +19,9 @@ export default function CustomCursor() {
     let ringX = 0;
     let ringY = 0;
 
-    let animationId;
+    let animationId: number;
 
-    const moveCursor = (e) => {
+    const moveCursor = (e: MouseEvent): void => {
       mouseX = e.clientX;
       mouseY = e.clientY;
 
@@ -27,13 +29,12 @@ export default function CustomCursor() {
       dot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
     };
 
-    const animate = () => {
+    const animate = (): void => {
       // Outer ring follows smoothly
       ringX += (mouseX - ringX) * 0.10;
       ringY += (mouseY - ringY) * 0.10;
 
-      ring.style.transform =
-        `translate3d(${ringX}px, ${ringY}px, 0)`;
+      ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0)`;
 
       animationId = requestAnimationFrame(animate);
     };
