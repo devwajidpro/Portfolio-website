@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import CustomCursor from '@/components/CustomCursor'
 import Navbar from "@/components/Navbar";
+import BackgroundEffect from "@/components/BackgroundEffect";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`dark ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <BackgroundEffect />
         <CustomCursor />
         <Navbar />
         {children}</body>
