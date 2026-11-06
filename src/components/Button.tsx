@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Button = () => {
   return (
-    <div className="relative flex flex-col gap-4 sm:flex-row items-center">
+    <div className="relative flex flex-wrap gap-4  items-center">
 
       {/* Projects Button */}
       <div className="relative group/projects">
