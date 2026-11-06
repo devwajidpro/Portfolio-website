@@ -1,5 +1,5 @@
 import Badge from "@/components/Badge";
-import Button from "@/components/Button";
+import Button from "@/components/HomeButtons";
 import ScrollReveal from "@/components/ScrollReveal";
 import SocialMediaIcons from "@/components/SocialMediaIcons";
 import TypingText from "@/components/TypingText";
