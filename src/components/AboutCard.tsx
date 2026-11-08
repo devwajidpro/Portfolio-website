@@ -18,7 +18,7 @@ const StatsCard = ({
 }: StatsCardProps) => {
   return (
     <div className="group relative w-full sm:w-[80%] md:w-[60%] lg:w-[40%] xl:w-[30%] max-w-xl min-w-0
-      rounded-3xl border border-white/10
+      rounded-xl border border-white/10
       bg-[#191d38]/95 backdrop-blur-xl
       p-2 sm:p-4
       transition-all duration-300
