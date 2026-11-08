@@ -41,7 +41,7 @@ const AboutSection = () => {
                     description="Innovative web solutions crafted" />
 
                 <AboutCard   icon={<Layers />}
-                    number={15}
+                    number={12}
                     title="TOTAL SKILLS"
                     description="Explore the technologies and tools I work with" />
 
