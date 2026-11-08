@@ -8,7 +8,7 @@ const AboutSection = () => {
   return (
     <section
       id="About"
-      className="relative flex flex-col items-center justify-center pt-25 pb-15 px-4 text-center"
+      className="relative flex flex-col items-center justify-center pt-25 pb-15 px-4 text-center scroll-mt-24"
     >
         <div className='flex items-center flex-col justify-center w-full h-full gap-4 lg:pl-14 lg:pr-14 md:pl-10 md:pr-10 sm:pl-6 sm:pr-6 px-6 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-4'>
             <ScrollReveal className="flex justify-center items-center w-full mb-5">
@@ -21,7 +21,7 @@ const AboutSection = () => {
                 delay={0.1}
                 className="flex justify-center items-center w-full mb-3"
             >
-                <p className="md:text-lg text-gray-400 max-w-2xl font-light text-center">
+                <p className="md:text-lg text-gray-400 max-w-lg font-light text-center">
                 I&apos;m <span className='text-[#e2d3fd]'>Wajid Ali</span>, a Full Stack Developer passionate about creating
                 modern, responsive, and user-friendly digital experiences. I enjoy
                 building creative projects, solving problems, and turning ideas into

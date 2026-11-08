@@ -8,7 +8,7 @@ export default function HomeSection() {
   const skills = ['Next JS', 'React', 'TypeScript', 'MongoDB']
   return (
     <>
-      <section id='Home' className="relative flex flex-wrap flex-col items-center justify-start pt-25 pb-15 px-4 text-center">
+      <section id='Home' className="relative flex flex-wrap flex-col items-center justify-start pt-25 pb-15 px-4 text-center scroll-mt-24">
         <div className = 'flex items-center flex-col justify-start w-full h-full gap-4 lg:pl-14 lg:pr-14 md:pl-10 md:pr-10 sm:pl-6 sm:pr-6 px-6 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-4'>
           <ScrollReveal className="flex items-center gap-3 mb-1 w-full flex-wrap justify-start text-left">
             <Badge />
