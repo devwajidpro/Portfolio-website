@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wajid Ali | Full Stack Developer Portfolio
 
-## Getting Started
+A modern, responsive developer portfolio built with Next.js, TypeScript, and Tailwind CSS. Showcasing my skills, projects, education, and experience as a Full Stack Developer specializing in MERN Stack and Next.js.
 
-First, run the development server:
+🌐 **Live Demo:** [View Portfolio](https://devwajidpro.com/)
+
+## ✨ Features
+
+- Modern and responsive UI
+- Dark theme with gradient effects
+- Interactive animations and custom cursor
+- Professional hero section
+- About me and education sections
+- Skills and technology showcase
+- Dynamic project showcase with detailed project pages
+- Contact form with EmailJS integration
+- Social media profile links
+- Optimized for desktop, tablet, and mobile devices
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|---|---|
+| Framework | Next.js, React |
+| Language | TypeScript, JavaScript |
+| Styling | Tailwind CSS |
+| Icons | Lucide React, React Icons |
+| Email Service | EmailJS |
+| Deployment | Vercel |
+
+## 📸 Portfolio Preview
+
+
+![Portfolio Preview](./public/Portfolio.png)
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/devwajidpro/portfolio.git
+```
+
+### 2. Navigate to the Project
+
+```bash
+cd portfolio
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+### 5. Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+portfolio/
+├── public/
+│   └── images/
+├── src/
+│   ├── app/
+│   │   ├── (app)/
+│   │   ├── project/
+│   │   ├── layout.tsx
+│   │   └── globals.css
+│   └── components/
+│       ├── Navbar.tsx
+│       ├── Footer.tsx
+│       ├── CustomCursor.tsx
+│       ├── BackgroundEffect.tsx
+│       └── ContactSection.tsx
+├── .env.local
+├── package.json
+└── README.md
+```
 
-## Learn More
+## 👨‍💻 About Me
 
-To learn more about Next.js, take a look at the following resources:
+I'm Wajid Ali, a Full Stack Developer passionate about building modern, scalable, and user-focused web applications.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I specialize in MERN Stack, Next.js, React, Node.js, and modern web technologies.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📬 Connect With Me
 
-## Deploy on Vercel
+- **GitHub:** [@devwajidpro](https://github.com/devwajidpro)
+- **LinkedIn:** [Wajid Ali](https://linkedin.com/in/devwajidpro)
+- **Portfolio:** [devwajidpro.vercel.app](https://devwajidpro.com)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⭐ If you like this project, consider giving it a star!
+
+**Built with ❤️ by Wajid Ali**
