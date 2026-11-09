@@ -4,8 +4,60 @@ import { Code, GraduationCap, Layers } from "lucide-react";
 import { useState } from "react";
 import ScrollReveal from "./ScrollReveal";
 import ProjectCard from "./ProjectCard";
+import SkillsCard from "./SkillsCard";
+import EducationSection from "./EducationSection";
 
 export default function PortfolioSections() {
+    const skills = [
+        {
+            title: "HTML",
+            image: "/Html.svg"
+        },
+        {
+            title: "CSS",
+            image: "/css.svg"
+        },
+        {
+            title: "JavaScript",
+            image: "/javascript.svg"
+        },
+        {
+            title: "TypeScript",
+            image: "/typescript.png"
+        },
+        {
+            title: "Tailwind",
+            image: "/tailwind.svg"
+        },
+        {
+            title: "Express JS",
+            image: "/ex.png"
+        },
+        {
+            title: "Node JS",
+            image: "/nodejs.svg"
+        },
+        {
+            title: "React",
+            image: "/reactjs.svg"
+        },
+        {
+            title: "Next JS",
+            image: "/nextjs.jpg"
+        },
+        {
+            title: "Mongo DB",
+            image: "/mongodb.png"
+        },
+        {
+            title: "JWT",
+            image: "/json.png"
+        },
+        {
+            title: "Docker",
+            image: "/docker.png"
+        }
+    ]
     const [activeSection, setActiveSection] = useState("Project")
 
     return (
@@ -129,14 +181,14 @@ export default function PortfolioSections() {
                 title="MegaBlog"
                 description="A modern blogging platform to create, share, and explore engaging articles."
                 demoLink="https://appwriteblog-sage-eta.vercel.app/"
-                detail="#" />
+                detail="/project/megablog" />
 
                 <ProjectCard 
                 image="/AI-Resume-Builder.png" 
                 title="AI Resume Builder"
                 description="Build professional resumes with AI-powered tools and modern templates."
                 demoLink="https://resume-builder-eight-topaz-53.vercel.app/"
-                detail='#' />
+                detail='/project/resumebuilder' />
                 
 
 
@@ -145,7 +197,28 @@ export default function PortfolioSections() {
                 title="Portfolio Website"
                 description="A modern portfolio showcasing my skills and projects."
                 demoLink="https://devwajidpro.com"
-                detail="#" />
+                detail="/project/portfolio" />
+            </ScrollReveal>
+        )}
+
+        {activeSection === "Skills" && (
+            <ScrollReveal
+                delay={0.3}
+                className="flex flex-wrap justify-center items-center w-full mb-3 gap-6"
+            >
+                { skills.map((skill) => (
+                    <SkillsCard key={skill.title} image={skill.image} title={skill.title} />
+                ))}
+            </ScrollReveal>
+        )}
+
+
+        {activeSection === "Education" && (
+            <ScrollReveal
+                delay={0.3}
+                className="flex flex-wrap justify-center items-center w-full mb-3 gap-6"
+            >
+                <EducationSection />
             </ScrollReveal>
         )}
         </>
