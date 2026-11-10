@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "Appwrite",
   ],
   alternates: {
-    canonical: "/projects/megablog",
+    canonical: "/project/megablog",
   },
   openGraph: {
     title: "MegaBlog | Full Stack Blogging Platform",

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Explore an AI-powered Resume Builder developed by Wajid Ali using the MERN stack and Gemini AI. Create professional resumes, enhance content with AI, choose modern templates, and share resumes online.",
   alternates: {
-    canonical: "/projects/ai-resume-builder",
+    canonical: "/project/resumebuilder",
   },
   openGraph: {
     title: "AI Resume Builder | MERN Stack & Gemini AI Project",

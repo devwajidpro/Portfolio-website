@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Explore Wajid Ali's personal portfolio website, built with Next.js, React, TypeScript, and Tailwind CSS. Discover its responsive design, interactive animations, projects showcase, and modern UI.",
   alternates: {
-    canonical: "/projects/portfolio",
+    canonical: "/project/portfolio",
   },
   openGraph: {
     title: "Portfolio Website | Next.js & TypeScript Project",
