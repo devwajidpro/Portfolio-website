@@ -46,24 +46,8 @@ const education = [
 
 export default function EducationSection() {
   return (
-    <section id="education" className="relative py-24 sm:py-28">
+    <section id="education" className="relative">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
-
-        {/* Section Heading */}
-        <div className="mb-16 max-w-2xl">
-          <span className="mb-4 inline-block text-sm font-medium tracking-widest text-purple-400 uppercase">
-            My Background
-          </span>
-
-          <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Education & <span className="text-purple-400">Learning</span>
-          </h2>
-
-          <p className="mt-4 max-w-xl text-sm leading-7 text-gray-400 sm:text-base">
-            My academic journey has helped me build a foundation in
-            computer science and develop a passion for technology.
-          </p>
-        </div>
 
         {/* Timeline */}
         <div className="relative ml-2 border-l border-white/10 sm:ml-3">
@@ -141,17 +125,6 @@ export default function EducationSection() {
               </article>
             );
           })}
-        </div>
-
-        {/* Bottom Note */}
-        <div className="mt-14 flex items-center gap-3 border-t border-white/10 pt-7">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-purple-500/10 text-purple-300">
-            <GraduationCap size={18} />
-          </div>
-
-          <p className="text-sm text-gray-400">
-            Learning is a continuous part of my journey.
-          </p>
         </div>
 
       </div>
