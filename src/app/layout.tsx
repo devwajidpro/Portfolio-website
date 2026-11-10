@@ -19,44 +19,34 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.devwajidpro.com"),
 
-
   title: {
-    default: "Wajid Ali | Full Stack Developer",
+    default: "Wajid Ali | Full Stack Developer | Dev Wajid Pro",
     template: "%s | Wajid Ali",
   },
 
   description:
-    "I'm Wajid Ali, a Full Stack Developer specializing in Next.js, React, Node.js, NestJS, and MongoDB. Explore my projects, skills, and experience.",
+    "Wajid Ali is a Full Stack Developer specializing in Next.js, React, JavaScript, Node.js, and MongoDB. Explore his web development projects, skills, and portfolio.",
 
-  applicationName: "Wajid Ali Portfolio",
+  applicationName: "Dev Wajid Pro",
 
   authors: [{ name: "Wajid Ali" }],
-
   creator: "Wajid Ali",
+  publisher: "Dev Wajid Pro",
 
-  publisher: "Wajid Ali",
-
-  keywords: [
-    "Wajid Ali",
-    "Full Stack Developer",
-    "Next.js Developer",
-    "React Developer",
-    "Node.js Developer",
-    "MERN Stack Developer",
-    "Web Developer Portfolio",
-    "Full Stack Developer Pakistan",
-  ],
+  verification: {
+    google: "VuYihRBtOFylW2lagYMO803OEUPVK9aIVdE-k1A89yw",
+  },
 
   alternates: {
     canonical: "/",
   },
 
   openGraph: {
-    title: "Wajid Ali | Full Stack Developer",
+    title: "Wajid Ali | Full Stack Developer | Dev Wajid Pro",
     description:
-      "Explore Wajid Ali's portfolio, projects, skills, and experience as a Full Stack Developer specializing in modern web technologies.",
+      "Explore Wajid Ali's portfolio, projects, and skills in Next.js, React, JavaScript, Node.js, and modern web development.",
     url: "https://www.devwajidpro.com",
-    siteName: "Wajid Ali Portfolio",
+    siteName: "Dev Wajid Pro",
     locale: "en_US",
     type: "website",
   },
@@ -65,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Wajid Ali | Full Stack Developer",
     description:
-      "Full Stack Developer specializing in Next.js, React, Node.js, and modern web applications.",
+      "Explore Wajid Ali's web development portfolio, featuring Next.js, React, JavaScript, and Node.js projects.",
   },
 
   robots: {
@@ -86,7 +76,6 @@ export default function RootLayout({
       lang="en"
       className={`dark ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <meta name="google-site-verification" content="VuYihRBtOFylW2lagYMO803OEUPVK9aIVdE-k1A89yw" />
       <body className="min-h-full flex flex-col">
         <BackgroundEffect />
         <CustomCursor />
