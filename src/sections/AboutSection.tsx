@@ -21,12 +21,13 @@ const AboutSection = () => {
                 delay={0.1}
                 className="flex justify-center items-center w-full mb-3"
             >
-                <p className="md:text-lg text-gray-400 max-w-lg font-light text-center">
-                I&apos;m <span className='text-[#e2d3fd]'>Wajid Ali</span>, a Full Stack Developer passionate about creating
-                modern, responsive, and user-friendly digital experiences. I enjoy
-                building creative projects, solving problems, and turning ideas into
-                reality through clean and efficient code. Always learning, always
-                building, and constantly exploring new technologies.
+                <p className="md:text-lg text-gray-400 max-w-2xl font-light text-center">
+                I&apos;m <span className="text-[#e2d3fd]">Wajid Ali</span>,
+                a Full Stack Developer focused on building modern and scalable
+                web applications. I work with Next.js, React, JavaScript,
+                TypeScript, Node.js, and MongoDB to create responsive user
+                experiences, powerful backend systems, and efficient web solutions.
+                I enjoy solving problems and continuously improving my development skills.
                 </p>
             </ScrollReveal>
 
@@ -37,12 +38,12 @@ const AboutSection = () => {
             <ScrollReveal delay={0.3} className='flex items-center gap-3 mb-6 w-full flex-wrap justify-center'>
                 <AboutCard   icon={<Code2 />}
                     number={3}
-                    title="TOTAL PROJECTS"
+                    title="PROJECTS COMPLETED"
                     description="Innovative web solutions crafted" />
 
                 <AboutCard   icon={<Layers />}
                     number={12}
-                    title="TOTAL SKILLS"
+                    title="TECHNOLOGIES & SKILLS"
                     description="Explore the technologies and tools I work with" />
 
                 <AboutCard   icon={<Rocket />}
