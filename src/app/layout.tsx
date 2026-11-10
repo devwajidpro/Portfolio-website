@@ -19,6 +19,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.devwajidpro.com"),
 
+  verification: {
+    google: "VuYihRBtOFylW2lagYMO803OEUPVK9aIVdE-k1A89yw",
+  },
+
   title: {
     default: "Wajid Ali | Full Stack Developer",
     template: "%s | Wajid Ali",
