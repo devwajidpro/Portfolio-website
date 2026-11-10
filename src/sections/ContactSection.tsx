@@ -136,7 +136,7 @@ export default function ContactSection() {
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={0.1}>
+        <ScrollReveal delay={0.1} className="mb-10 text-center">
             <p className="mt-3 text-sm text-gray-400 sm:text-base">
               Got a question? Send me a message, and I&apos;ll get back to you soon.
             </p>
