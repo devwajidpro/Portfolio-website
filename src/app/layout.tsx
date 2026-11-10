@@ -19,9 +19,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.devwajidpro.com"),
 
-  verification: {
-    google: "VuYihRBtOFylW2lagYMO803OEUPVK9aIVdE-k1A89yw",
-  },
 
   title: {
     default: "Wajid Ali | Full Stack Developer",
@@ -89,6 +86,7 @@ export default function RootLayout({
       lang="en"
       className={`dark ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <meta name="google-site-verification" content="VuYihRBtOFylW2lagYMO803OEUPVK9aIVdE-k1A89yw" />
       <body className="min-h-full flex flex-col">
         <BackgroundEffect />
         <CustomCursor />
