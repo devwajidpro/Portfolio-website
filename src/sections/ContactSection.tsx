@@ -17,6 +17,7 @@ import {
   SiUpwork,
 } from "react-icons/si";
 import { SlSocialLinkedin } from "react-icons/sl";
+import ScrollReveal from "@/components/ScrollReveal";
 
 
 const socialLinks = [
@@ -126,17 +127,21 @@ export default function ContactSection() {
       <div className="relative z-10 mx-auto max-w-5xl">
 
         {/* Heading */}
-        <div className="mb-10 text-center">
+        <ScrollReveal>
+          <div className="mb-10 text-center">
 
-          <h2 className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl">
-            Contact Me
-          </h2>
+            <h2 className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl">
+              Contact Me
+            </h2>
+          </div>
+        </ScrollReveal>
 
-          <p className="mt-3 text-sm text-gray-400 sm:text-base">
-            Got a question? Send me a message, and I&apos;ll get back to you soon.
-          </p>
-
-        </div>
+        <ScrollReveal delay={0.1}>
+            <p className="mt-3 text-sm text-gray-400 sm:text-base">
+              Got a question? Send me a message, and I&apos;ll get back to you soon.
+            </p>
+        </ScrollReveal>
+        
 
         {/* Main Card */}
         <div className="mx-auto max-w-4xl rounded-2xl border border-white/5 bg-[#111111]/95 p-4 shadow-2xl sm:p-6 md:p-8">
@@ -147,7 +152,7 @@ export default function ContactSection() {
             {/* Card Heading */}
             <div className="mb-6 flex items-center justify-between">
 
-              <div>
+              <ScrollReveal delay={0.2}>
                 <h3 className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-2xl font-bold text-transparent sm:text-3xl">
                   Get in Touch
                 </h3>
@@ -155,7 +160,7 @@ export default function ContactSection() {
                 <p className="mt-2 text-xs leading-6 text-gray-400 sm:text-sm">
                   Have something to discuss? Send me a message and let&apos;s talk.
                 </p>
-              </div>
+              </ScrollReveal>
 
               <Share2
                 size={28}
@@ -168,7 +173,7 @@ export default function ContactSection() {
             <form onSubmit={handleSubmit} className="space-y-4">
 
               {/* Name */}
-              <div className="relative">
+              <ScrollReveal delay={0.3} className="relative">
 
                 <User
                   size={17}
@@ -190,10 +195,10 @@ export default function ContactSection() {
                   className="w-full rounded-lg border border-white/20 bg-white/10 py-3 pl-10 pr-4 text-sm text-white outline-none transition placeholder:text-gray-400 focus:border-purple-500 focus:ring-1 focus:ring-purple-500"
                 />
 
-              </div>
+              </ScrollReveal>
 
               {/* Email */}
-              <div className="relative">
+              <ScrollReveal delay={0.4} className="relative">
 
                 <Mail
                   size={17}
@@ -215,10 +220,10 @@ export default function ContactSection() {
                   className="w-full rounded-lg border border-white/20 bg-white/10 py-3 pl-10 pr-4 text-sm text-white outline-none transition placeholder:text-gray-400 focus:border-purple-500 focus:ring-1 focus:ring-purple-500"
                 />
 
-              </div>
+              </ScrollReveal>
 
               {/* Message */}
-              <div className="relative">
+              <ScrollReveal delay={0.5} className="relative">
 
                 <MessageSquare
                   size={17}
@@ -240,9 +245,10 @@ export default function ContactSection() {
                   className="w-full resize-none rounded-lg border border-white/20 bg-white/10 py-3 pl-10 pr-4 text-sm text-white outline-none transition placeholder:text-gray-400 focus:border-purple-500 focus:ring-1 focus:ring-purple-500"
                 />
 
-              </div>
+              </ScrollReveal>
 
               {/* Submit Button */}
+              <ScrollReveal delay={0.6}>
               <button
                 type="submit"
                 disabled={status === "sending"}
@@ -261,6 +267,7 @@ export default function ContactSection() {
                     ? "Sending..."
                     : "Send Message"}
                 </button>
+                </ScrollReveal>
 
 
                 {status === "success" && (
@@ -288,12 +295,14 @@ export default function ContactSection() {
             {/* Social Links */}
             <div className="rounded-xl border border-white/5 bg-white/[0.08] p-4 sm:p-5">
 
+                <ScrollReveal delay={0.7}>
               <h4 className="mb-5 flex items-center gap-2 text-base font-semibold text-white">
                 <span className="h-0.5 w-5 bg-gradient-to-r from-blue-500 to-purple-500" />
                 Connect With Me
               </h4>
+              </ScrollReveal>
 
-              <div className="space-y-3">
+              <ScrollReveal delay={0.8} className="space-y-3">
 
                 {socialLinks.map((social) => {
                   const Icon = social.icon;
@@ -325,7 +334,7 @@ export default function ContactSection() {
                   );
                 })}
 
-              </div>
+              </ScrollReveal>
             </div>
 
           </div>
