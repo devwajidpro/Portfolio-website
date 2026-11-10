@@ -5,7 +5,14 @@ import SocialMediaIcons from "@/components/SocialMediaIcons";
 import TypingText from "@/components/TypingText";
 
 export default function HomeSection() {
-  const skills = ['Next JS', 'React', 'TypeScript', 'MongoDB']
+  const skills = [
+    "Next.js",
+    "React.js",
+    "JavaScript",
+    "TypeScript",
+    "Node.js",
+    "MongoDB",
+  ];
   return (
     <>
       <section id='Home' className="relative flex flex-wrap flex-col items-center justify-start pt-25 pb-15 px-4 text-center scroll-mt-24">
@@ -14,17 +21,19 @@ export default function HomeSection() {
             <Badge />
           </ScrollReveal>
           <ScrollReveal delay={0.1} className="flex items-center gap-3 w-full flex-wrap justify-start text-left">
-            <h1 className="text-[#e2d3fd] text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold">Full Stack</h1>
+            <h2 className="text-[#e2d3fd] text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl font-bold">Hi, I&apos;m Wajid Ali</h2>
           </ScrollReveal>
           <ScrollReveal delay={0.2} className="flex items-center gap-3 w-full flex-wrap justify-start text-left">
-            <h1 className="bg-linear-to-r from-[#6366f1] to-[#a855f7] text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-7xl bg-clip-text text-transparent font-bold">Developer</h1>
+            <h1 className="bg-linear-to-r from-[#6366f1] to-[#a855f7] text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl bg-clip-text text-transparent font-bold">Full Stack Developer</h1>
           </ScrollReveal>
           <ScrollReveal delay={0.3} className="flex items-center gap-3 w-full flex-wrap justify-start text-left">
             <TypingText />
           </ScrollReveal>
           <ScrollReveal delay={0.4} className="flex gap-3 items-center w-full flex-wrap justify-start text-left">
             <p className='md:text-lg text-gray-400 max-w-2xl font-light'>
-              Building scalable, modern, and user-focused web applications with clean code and innovative solutions.
+             I&apos;m Wajid Ali, a Full Stack Developer specializing in Next.js,
+            React, JavaScript, and Node.js. I build modern, responsive,
+            and scalable web applications with clean code and user-focused experiences.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={0.5} className="flex flex-wrap items-center gap-3 mb-3 w-full justify-start text-left">
