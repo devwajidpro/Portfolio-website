@@ -55,7 +55,7 @@ export default function ProjectPreview({name, description, NoOfTechnologies, NoO
           </Link>
 
           <Link
-            href="/#portfolio"
+            href="/#Portfolio"
             className="text-gray-400 transition hover:text-purple-400"
           >
             Projects
@@ -94,7 +94,7 @@ export default function ProjectPreview({name, description, NoOfTechnologies, NoO
                 </div>
 
                 <div>
-                  <h3 className="text-2xl font-bold text-blue-200">{NoOfTechnologies}</h3>
+                  <p className="text-2xl font-bold text-blue-200">{NoOfTechnologies}</p>
                   <p className="text-sm text-gray-400">
                     Total Technology
                   </p>
@@ -108,7 +108,7 @@ export default function ProjectPreview({name, description, NoOfTechnologies, NoO
                 </div>
 
                 <div>
-                  <h3 className="text-2xl font-bold text-purple-200">{NoOfFeatures}</h3>
+                  <p className="text-2xl font-bold text-purple-200">{NoOfFeatures}</p>
                   <p className="text-sm text-gray-400">
                     Key Features
                   </p>
@@ -198,27 +198,20 @@ export default function ProjectPreview({name, description, NoOfTechnologies, NoO
                 Key Features
               </h2>
 
-              <div className="space-y-7">
+              <ul className="space-y-7">
+              {features.map((feature) => (
+                <li key={feature.title} className="group flex items-start gap-4">
+                  <span className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-gradient-to-r from-blue-400 to-purple-500" />
 
-                {features.map((feature, index) => (
-                  <div
-                    key={feature.title}
-                    className="group flex items-start gap-4"
-                  >
-
-                    <span className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 shadow-[0_0_12px_rgba(139,92,246,0.7)]" />
-
-                    <p className="text-base leading-7 text-gray-300 transition group-hover:text-white sm:text-lg">
-                      <span className="mr-1 text-white font-medium">
-                        {feature.icon} {feature.title}
-                      </span>
-                      – {feature.description}
-                    </p>
-
-                  </div>
-                ))}
-
-              </div>
+                  <p className="text-base leading-7 text-gray-300 sm:text-lg">
+                    <span className="mr-1 text-white font-medium">
+                      {feature.icon} {feature.title}
+                    </span>
+                    – {feature.description}
+                  </p>
+                </li>
+              ))}
+              </ul>
 
             </div>
 

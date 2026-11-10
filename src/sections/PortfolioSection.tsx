@@ -21,7 +21,9 @@ const PortfolioSection = () => {
                 className="flex justify-center items-center w-full mb-3"
             >
                 <p className="md:text-lg text-gray-400 max-w-2xl font-light text-center">
-                    Explore my journey through projects, certifications, and technical expertise. Each section represents a milestone in my continuous learning path.
+                    Explore my web development projects, technical skills, and
+                    educational background. Discover the technologies I use to
+                    build modern, responsive, and scalable web applications.
                 </p>
             </ScrollReveal>
 

@@ -9,55 +9,19 @@ import EducationSection from "./EducationSection";
 
 export default function PortfolioSections() {
     const skills = [
-        {
-            title: "HTML",
-            image: "/Html.svg"
-        },
-        {
-            title: "CSS",
-            image: "/css.svg"
-        },
-        {
-            title: "JavaScript",
-            image: "/javascript.svg"
-        },
-        {
-            title: "TypeScript",
-            image: "/typescript.png"
-        },
-        {
-            title: "Tailwind",
-            image: "/tailwind.svg"
-        },
-        {
-            title: "Express JS",
-            image: "/ex.png"
-        },
-        {
-            title: "Node JS",
-            image: "/nodejs.svg"
-        },
-        {
-            title: "React",
-            image: "/reactjs.svg"
-        },
-        {
-            title: "Next JS",
-            image: "/nextjs.jpg"
-        },
-        {
-            title: "Mongo DB",
-            image: "/mongodb.png"
-        },
-        {
-            title: "JWT",
-            image: "/json.png"
-        },
-        {
-            title: "Docker",
-            image: "/docker.png"
-        }
-    ]
+    { title: "HTML5", image: "/Html.svg" },
+    { title: "CSS3", image: "/css.svg" },
+    { title: "JavaScript", image: "/javascript.svg" },
+    { title: "TypeScript", image: "/typescript.png" },
+    { title: "Tailwind", image: "/tailwind.svg" },
+    { title: "Express.js", image: "/ex.png" },
+    { title: "Node.js", image: "/nodejs.svg" },
+    { title: "React.js", image: "/reactjs.svg" },
+    { title: "Next.js", image: "/nextjs.jpg" },
+    { title: "MongoDB", image: "/mongodb.png" },
+    { title: "JWT", image: "/json.png" },
+    { title: "Docker", image: "/docker.png" },
+    ];
     const [activeSection, setActiveSection] = useState("Project")
 
     return (
@@ -170,7 +134,7 @@ export default function PortfolioSections() {
             </div>
         </ScrollReveal>
 
-        {activeSection === "Project" && (
+        <div hidden={activeSection !== "Project"}>
             <ScrollReveal
                 delay={0.3}
                 className="flex flex-wrap justify-center items-center w-full mb-3 gap-3"
@@ -179,14 +143,14 @@ export default function PortfolioSections() {
                 <ProjectCard 
                 image="/MegaBlog.png" 
                 title="MegaBlog"
-                description="A modern blogging platform to create, share, and explore engaging articles."
+                description="A full-stack blogging platform built with React and Appwrite, featuring user authentication, blog creation, and content management."
                 demoLink="https://appwriteblog-sage-eta.vercel.app/"
                 detail="/project/megablog" />
 
                 <ProjectCard 
                 image="/AI-Resume-Builder.png" 
                 title="AI Resume Builder"
-                description="Build professional resumes with AI-powered tools and modern templates."
+                description="An AI-powered resume builder built with the MERN stack, allowing users to create, customize, and share professional resumes."
                 demoLink="https://resume-builder-eight-topaz-53.vercel.app/"
                 detail='/project/resumebuilder' />
                 
@@ -195,13 +159,13 @@ export default function PortfolioSections() {
                 <ProjectCard 
                 image="/Portfolio.png" 
                 title="Portfolio Website"
-                description="A modern portfolio showcasing my skills and projects."
-                demoLink="https://devwajidpro.com"
+                description="A personal developer portfolio built with Next.js and TypeScript to showcase projects, technical skills, and web development experience."
+                demoLink="https://www.devwajidpro.com"
                 detail="/project/portfolio" />
             </ScrollReveal>
-        )}
+        </div>
 
-        {activeSection === "Skills" && (
+        <div hidden={activeSection !== "Skills"}>
             <ScrollReveal
                 delay={0.3}
                 className="flex flex-wrap justify-center items-center w-full mb-3 gap-6"
@@ -210,17 +174,17 @@ export default function PortfolioSections() {
                     <SkillsCard key={skill.title} image={skill.image} title={skill.title} />
                 ))}
             </ScrollReveal>
-        )}
+        </div>
 
 
-        {activeSection === "Education" && (
-            <ScrollReveal
+        <div hidden={activeSection !== "Education"}>
+                <ScrollReveal
                 delay={0.3}
                 className="flex flex-wrap justify-center items-center w-full mb-3 gap-6"
             >
                 <EducationSection />
             </ScrollReveal>
-        )}
+        </div>
         </>
     );
 }
