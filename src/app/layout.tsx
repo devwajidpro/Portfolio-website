@@ -68,6 +68,43 @@ export const metadata: Metadata = {
   },
 };
 
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.devwajidpro.com/#person",
+      name: "Wajid Ali",
+      url: "https://www.devwajidpro.com",
+      jobTitle: "Full Stack Developer",
+      description:
+        "Wajid Ali is a Full Stack Developer specializing in Next.js, React, JavaScript, Node.js, and MongoDB.",
+      knowsAbout: [
+        "Full Stack Development",
+        "Next.js",
+        "React",
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "MongoDB",
+        "Web Development",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.devwajidpro.com/#website",
+      name: "Dev Wajid Pro",
+      alternateName: "Wajid Ali Portfolio",
+      url: "https://www.devwajidpro.com",
+      publisher: {
+        "@id": "https://www.devwajidpro.com/#person",
+      },
+    },
+  ],
+};
+
+
 export default function RootLayout({
   children,
 }: LayoutProps<"/">) {
@@ -77,6 +114,15 @@ export default function RootLayout({
       className={`dark ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
+
         <BackgroundEffect />
         <CustomCursor />
         {children}
