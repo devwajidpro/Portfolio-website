@@ -338,7 +338,7 @@ export default function ContactSection() {
                       >
 
                         <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${social.bg} ${social.color}`}>
-                          <Icon size={21} />
+                          <Icon size={21} aria-hidden="true" />
                         </div>
 
                         <div className="min-w-0">

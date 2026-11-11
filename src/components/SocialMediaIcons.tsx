@@ -18,7 +18,7 @@ const SocialMediaIcons = () => {
                 rel="noopener noreferrer"
                 className="relative rounded-xl bg-black/50 backdrop-blur-xl p-2 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300"
                 >
-                <FaGithub className="w-6 h-6" />
+                <FaGithub aria-hidden="true" className="w-6 h-6" />
             </a>
         </div>
 
@@ -32,7 +32,7 @@ const SocialMediaIcons = () => {
                 rel="noopener noreferrer"
                 className="relative rounded-xl bg-black/50 backdrop-blur-xl p-2 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300"
                 >
-                <FaLinkedinIn className="w-6 h-6" />
+                <FaLinkedinIn aria-hidden="true" className="w-6 h-6" />
             </a>
         </div>
 
@@ -46,7 +46,7 @@ const SocialMediaIcons = () => {
                 rel="noopener noreferrer"
                 className="relative rounded-xl bg-black/50 backdrop-blur-xl p-2 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300"
                 >
-               <Image width={24} height={24} src="/fiverr.svg" alt="Fiverr" /> 
+               <Image width={24} height={24} src="/fiverr.svg" alt="Fiverr" aria-hidden="true"/> 
             </a>
         </div>
 
@@ -60,7 +60,7 @@ const SocialMediaIcons = () => {
                 rel="noopener noreferrer"
                 className="relative rounded-xl bg-black/50 backdrop-blur-xl p-2 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300"
                 >
-                <SiUpwork className="w-6 h-6" />
+                <SiUpwork aria-hidden="true" className="w-6 h-6" />
             </a>
         </div>
       
