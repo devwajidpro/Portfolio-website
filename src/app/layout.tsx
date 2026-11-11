@@ -80,6 +80,12 @@ const jsonLd = {
       jobTitle: "Full Stack Developer",
       description:
         "Wajid Ali is a Full Stack Developer specializing in Next.js, React, JavaScript, Node.js, and MongoDB.",
+      sameAs: [
+        "https://github.com/devwajidpro",
+        "https://www.linkedin.com/in/devwajidpro/",
+        "https://www.fiverr.com/devwajidpro",
+        "https://www.upwork.com/freelancers/~01756bc606e240601e",
+      ],
       knowsAbout: [
         "Full Stack Development",
         "Next.js",
