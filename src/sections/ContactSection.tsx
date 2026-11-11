@@ -331,6 +331,7 @@ export default function ContactSection() {
                       <a
                         key={social.name}
                         href={social.href}
+                        aria-label={`Visit Wajid Ali's ${social.name === "Let's Connect" ? "LinkedIn" : social.name } profile`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.04] p-3 transition duration-300 hover:border-purple-500/40 hover:bg-white/[0.09]"

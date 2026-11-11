@@ -38,15 +38,16 @@ export default function ProjectCard({
       </p>
 
       <div className="pt-4 flex items-center justify-between">
-        <Link
+        <a
           href={demoLink}
+          aria-label={`View ${title} live demo`}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors duration-200 gap-2"
         >
           Live Demo
           <SquareArrowOutUpRight size={16} />
-        </Link>
+        </a>
 
         <Link
           href={detail}
