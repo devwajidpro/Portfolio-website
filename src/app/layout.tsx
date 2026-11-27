@@ -35,6 +35,9 @@ export const metadata: Metadata = {
 
   verification: {
     google: "VuYihRBtOFylW2lagYMO803OEUPVK9aIVdE-k1A89yw",
+    other: {
+    "seo-changeguard-site-verification": "scg_35jkrFymhpJqsk8rISGvmfe6uUhMJ3LoWILd8i8Sg1A",
+  },
   },
 
   alternates: {
